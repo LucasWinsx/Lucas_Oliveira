@@ -1,0 +1,12 @@
+
+01-home.png        página inicial (http://localhost/lucas_oliveira/)
+02-catalogo.png    catálogo com busca/filtros
+03-registro.png    tela de criar conta
+04-login.png       tela de login
+05-dashboard.png   dashboard do admin (login: adm@gmail.com / 123456)
+06-jogos.png       gerenciar jogos
+07-categorias.png  lista de categorias
+08-clientes.png    lista de clientes
+09-pedidos.png     lista de pedidos
+10-relatorio.png   relatório de vendas
+

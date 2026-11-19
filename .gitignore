@@ -1,0 +1,23 @@
+# sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# dependências e logs
+vendor/
+node_modules/
+*.log
+
+# configurações locais (se criar um arquivo com senha do banco, não suba)
+.env
+
+# chave da IA (nunca suba para o GitHub)
+admin/config/ia.php
+
+# credenciais locais do banco
+admin/config/db.local.php
+
+# arquivos de diagnóstico e backups
+info.php
+baclk/

@@ -1,0 +1,50 @@
+:root{--bg1:#0d1b4c;--bg2:#050816;--sf:#142058;--tx:#f2f5ff;--mt:#9fabd8;--ac:#2f7bff;--ok:#3ddc97;--bd:#2a3a7c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;color:var(--tx);font:16px/1.5 "Segoe UI",system-ui,sans-serif;background:linear-gradient(180deg,var(--bg1) 0,var(--bg2) 520px) var(--bg2);min-height:100vh}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.topo{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:22px;padding:12px 32px;background:rgba(5,8,22,.88);backdrop-filter:blur(8px);flex-wrap:wrap}
+.marca{font-size:22px;font-weight:700;letter-spacing:.3px}
+.menu{display:flex;gap:20px;color:var(--mt)}.menu a:hover{color:#fff}
+.busca{flex:1;min-width:160px;max-width:340px;margin-left:auto}
+.busca input{width:100%;padding:9px 16px;border-radius:99px;border:1px solid var(--bd);background:rgba(255,255,255,.08);color:#fff;font:inherit}
+.busca input::placeholder{color:var(--mt)}
+.conta{margin-left:auto;display:flex;gap:14px;align-items:center;color:var(--mt)}.conta a:hover{color:#fff}
+.conta .destaque{background:var(--ac);color:#fff;padding:7px 16px;border-radius:99px;font-weight:600}
+.chips{display:flex;gap:10px;padding:16px 32px 0;overflow-x:auto}
+.chips a{white-space:nowrap;padding:6px 16px;border-radius:99px;border:1px solid var(--bd);color:var(--mt)}
+.chips a:hover{color:#fff;border-color:#fff}.chips a.on{background:#fff;color:#0d1b4c;border-color:#fff;font-weight:600}
+main{padding:0 32px 40px;max-width:1400px;margin:0 auto}
+.hero{position:relative;height:420px;margin-top:20px;border-radius:18px;overflow:hidden;background:var(--sf)}
+.slide{position:absolute;inset:0;display:flex;align-items:flex-end;padding:40px;background:linear-gradient(120deg,#1f3fae,#0d1b4c) center/cover;opacity:0;visibility:hidden;transition:opacity .7s}
+.slide.ativo{opacity:1;visibility:visible}
+.slide::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,22,.92) 0,rgba(5,8,22,.45) 55%,rgba(5,8,22,.1))}
+.slide-txt{position:relative;max-width:520px}
+.slide h1{font-size:44px;line-height:1.1;margin:4px 0 10px}
+.desc{color:#d5dcf5;margin:0 0 12px}
+.preco-grande{font-size:26px;font-weight:700;margin:0 0 16px}
+.btn{display:inline-block;background:var(--ac);color:#fff;padding:11px 28px;border-radius:99px;font-weight:700}
+.btn:hover{background:#4d8fff}
+.pontos{position:absolute;right:24px;bottom:20px;display:flex;gap:8px;z-index:2}
+.pontos button{width:11px;height:11px;border-radius:50%;border:0;background:rgba(255,255,255,.4);cursor:pointer;padding:0}
+.pontos button.on{background:#fff}
+.bloco{margin-top:36px}
+.bloco h2{font-size:24px;margin:0 0 14px}
+.vazio{color:var(--mt)}
+.fileira{display:flex;gap:18px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x proximity}
+.fileira .card{flex:0 0 190px;scroll-snap-align:start}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:20px}
+.card{display:block;transition:transform .2s}
+a.card:hover{transform:translateY(-4px)}
+.capa{position:relative;aspect-ratio:1/1;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#27409c,#101a45);box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.capa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ini{position:absolute;inset:0;display:grid;place-items:center;font-size:64px;font-weight:700;color:rgba(255,255,255,.25)}
+.capa em{position:absolute;left:8px;top:8px;background:#000b;padding:2px 10px;border-radius:99px;font-size:13px;font-style:normal}
+.card h3{font-size:16px;margin:10px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cat{color:var(--mt);margin:0;font-size:14px}
+.preco{margin:2px 0 0;font-weight:700}
+.esgotado{opacity:.55}
+.rodape{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:24px 32px;border-top:1px solid var(--bd);color:var(--mt)}
+@media(max-width:700px){.topo,.chips,main,.rodape{padding-left:16px;padding-right:16px}.menu{display:none}.hero{height:360px}.slide{padding:22px}.slide h1{font-size:30px}}
+@media(prefers-reduced-motion:reduce){.slide,.card{transition:none}html{scroll-behavior:auto}}
