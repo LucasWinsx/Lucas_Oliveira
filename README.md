@@ -279,7 +279,7 @@ A chave fica só no servidor; a IA recebe apenas o catálogo e a pergunta (nenhu
 
 ## Link do repositório no GitHub
 
-**https://github.com/SEU-USUARIO/lucas_oliveira** _(troque pelo link real do seu repositório público)_
+**https://github.com/LucasWinsx/Lucas_Oliveira**
 
 
 ## Ajustes de segurança e ambiente
